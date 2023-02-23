@@ -1,7 +1,12 @@
+import Image from "next/image";
+import Logo from "../public/images/landing/logo.png";
+import Link from "next/link";
+import About from "../pages/about";
+
 const Navbar = () => {
   return (
     <>
-      {/* Main Header*/}
+      {/* Main Header */}
       <header className="main-header">
         {/* Menu Wave */}
         <div className="menu_wave" />
@@ -9,9 +14,9 @@ const Navbar = () => {
         <div className="main-box">
           <div className="menu-box">
             <div className="logo">
-              <a href="index.html">
-                <img src="images/logo.png" alt="" title="" />
-              </a>
+              <Link href="/">
+                <Image src={Logo} alt="logo" width={185} height={185} />
+              </Link>
             </div>
             {/*Nav Box*/}
             <div className="nav-outer clearfix">
@@ -27,9 +32,9 @@ const Navbar = () => {
                     </li>
                     <li className="dropdown current">
                       <a href="about-us.html">Pages</a>
-                      <ul>
-                        <li className="current">
-                          <a href="about-us.html">About Us</a>
+                      {/* <ul>
+                        <li>
+                          <a href="/about">About Us</a>
                         </li>
                         <li>
                           <a href="our-staff.html">Our Staff</a>
@@ -40,7 +45,7 @@ const Navbar = () => {
                         <li>
                           <a href="recipes-list.html">Recipes Grid</a>
                         </li>
-                      </ul>
+                      </ul> */}
                     </li>
                     <li className="dropdown">
                       <a href="portfolio-masonry.html">Portfolio</a>
@@ -48,34 +53,13 @@ const Navbar = () => {
                         <li>
                           <a href="portfolio-masonry.html">Masonry</a>
                         </li>
-                        <li>
-                          <a href="portfolio-masonry-wide.html">Masonry Wide</a>
-                        </li>
-                        <li>
-                          <a href="portfolio-wide.html">Wide</a>
-                        </li>
-                        <li>
-                          <a href="portfolio-with-filter.html">With Filter</a>
-                        </li>
-                        <li>
-                          <a href="portfolio-two-column.html">Two Columns</a>
-                        </li>
-                        <li>
-                          <a href="portfolio-with-sidebar.html">With Sidebar</a>
-                        </li>
-                        <li>
-                          <a href="portfolio-square.html">Square</a>
-                        </li>
-                        <li>
-                          <a href="portfolio-single.html">single Post</a>
-                        </li>
                       </ul>
                     </li>
                   </ul>
                   <ul className="navigation menu-right clearfix">
                     <li className="dropdown">
                       <a href="blog-showcase.html">Blog</a>
-                      <ul>
+                      {/* <ul>
                         <li>
                           <a href="blog-showcase.html">Checkerboard</a>
                         </li>
@@ -85,47 +69,15 @@ const Navbar = () => {
                         <li>
                           <a href="blog-masonry.html">Masonry</a>
                         </li>
-                        <li>
-                          <a href="blog-masonry-full-width.html">
-                            Masonry Full Width
-                          </a>
-                        </li>
-                        <li>
-                          <a href="blog-two-column.html">Two Columns Grid</a>
-                        </li>
-                        <li>
-                          <a href="blog-three-column-wide.html">
-                            Three Columns Wide
-                          </a>
-                        </li>
+
                         <li className="dropdown">
                           <a href="#">Post Types</a>
-                          <ul>
-                            <li>
-                              <a href="blog-single.html">Standard Post</a>
-                            </li>
-                            <li>
-                              <a href="blog-single-2.html">Gallery Post</a>
-                            </li>
-                            <li>
-                              <a href="blog-single-3.html">Video Post</a>
-                            </li>
-                            <li>
-                              <a href="blog-single-4.html">Audio Post</a>
-                            </li>
-                            <li>
-                              <a href="blog-single-5.html">Quote Post</a>
-                            </li>
-                            <li>
-                              <a href="blog-single-6.html">Link Post</a>
-                            </li>
-                          </ul>
                         </li>
-                      </ul>
+                      </ul> */}
                     </li>
                     <li className="dropdown">
                       <a href="shop.html">Shop</a>
-                      <ul>
+                      {/* <ul>
                         <li>
                           <a href="shop.html">Shop</a>
                         </li>
@@ -138,7 +90,7 @@ const Navbar = () => {
                         <li>
                           <a href="login.html">My account</a>
                         </li>
-                      </ul>
+                      </ul> */}
                     </li>
                     <li>
                       <a href="contact.html">Contacts</a>
@@ -155,7 +107,7 @@ const Navbar = () => {
                     <span className="count">2</span>
                   </a>
                   <div className="shopping-cart">
-                    <ul className="shopping-cart-items">
+                    {/* <ul className="shopping-cart-items">
                       <li className="cart-item">
                         <img
                           src="https://via.placeholder.com/300x300"
@@ -186,7 +138,7 @@ const Navbar = () => {
                           <span className="fa fa-times" />
                         </button>
                       </li>
-                    </ul>
+                    </ul> */}
                     <div className="cart-footer">
                       <div className="shopping-cart-total">
                         <strong>Subtotal:</strong> $97.00
@@ -198,7 +150,7 @@ const Navbar = () => {
                         Checkout
                       </a>
                     </div>
-                  </div>{" "}
+                  </div>
                   {/*end shopping-cart */}
                 </div>
                 {/* Search Btn */}
